@@ -74,7 +74,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-Os-d98">
-                                <rect key="frame" x="284" y="320" width="42" height="65"/>
+                                <rect key="frame" x="284" y="323" width="42" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -85,7 +85,7 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="HRP-D8-UXA" appends="YES" id="ja9-ca-wLS"/>
+                            <outletCollection property="gestureRecognizers" destination="p6p-nN-4JP" appends="YES" id="TaA-yz-MAC"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="d4i-Wm-lyh"/>
@@ -94,14 +94,17 @@
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="billField" destination="Tgc-tF-AMz" id="pdl-N7-hcz"/>
-                        <outlet property="onTap" destination="HRP-D8-UXA" id="XTy-rh-Djb"/>
                         <outlet property="tipControl" destination="Ltr-XS-ZuH" id="ea9-EW-jnq"/>
                         <outlet property="tipLabel" destination="Ftg-io-kiZ" id="fSN-av-3KA"/>
                         <outlet property="totalLabel" destination="JfK-Os-d98" id="rlb-tf-n5z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="HRP-D8-UXA"/>
+                <tapGestureRecognizer id="p6p-nN-4JP">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="y0T-z6-i0U"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="149.59999999999999" y="20.239880059970016"/>
         </scene>

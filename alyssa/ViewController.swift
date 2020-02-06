@@ -27,15 +27,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-    var onTap: UITapGestureRecognizer!
+    
     
     
     @IBAction func onTap(_ sender: Any) {
-         print("Hello")
-            
-         view.endEditing(true)
+        print("Hello")
     }
+    
     
     @IBAction func calculateTip(_ sender: Any) {
         // get the bill
